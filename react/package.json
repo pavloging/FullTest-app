@@ -8,7 +8,8 @@
     "test": "jest",
     "build": "tsc && vite build",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "wdio": "wdio run ./wdio.conf.ts"
   },
   "dependencies": {
     "@types/react-router-dom": "^5.3.3",
@@ -34,6 +35,10 @@
     "@typescript-eslint/eslint-plugin": "^7.2.0",
     "@typescript-eslint/parser": "^7.2.0",
     "@vitejs/plugin-react": "^4.2.1",
+    "@wdio/cli": "^8.36.0",
+    "@wdio/local-runner": "^8.36.0",
+    "@wdio/mocha-framework": "^8.36.0",
+    "@wdio/spec-reporter": "^8.36.0",
     "eslint": "^8.57.0",
     "eslint-plugin-jest": "^28.2.0",
     "eslint-plugin-react-hooks": "^4.6.0",
