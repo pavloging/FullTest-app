@@ -24,12 +24,11 @@ const UsersForTest = () => {
 
     return (
         <div>
-            <h1 id="users-finish">Идет загрузка...</h1>
             {isLoading && <h1 id="users-loading">Идет загрузка...</h1>}
             {users.length && (
                 <div id="users-list">
                     {users.map((user) => (
-                        <User onDelete={onDelete} user={user} />
+                        <User key={user.id} onDelete={onDelete} user={user} />
                     ))}
                 </div>
             )}
